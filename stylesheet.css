@@ -9,7 +9,7 @@ h1 {
 }
 
 p {
-	width: 1160px;
+	width: 90%;
 }
 
 hr {
@@ -41,7 +41,7 @@ hr {
 	background-color: white;
   	color: black;
   	text-decoration-color: black;
-	width: 1160px;
+	width: 90%;
 }
 .nav li {
     display:inline;
@@ -60,10 +60,15 @@ hr {
   	color: black;
 }
 
+.active {
+  background-color: gray;
+  color: red;
+}
+
 .hero-image {
  	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://user-images.githubusercontent.com/31483647/55677909-d9a4d680-58be-11e9-92c2-7b8c008fabb6.jpg");
   	height: 273px;
-  	width: 1160px;
+  	width: 90%;
   	background-position: center;
   	background-repeat: no-repeat;
  	background-size: cover;
@@ -72,9 +77,7 @@ hr {
 }
 
 .hero-text {
-  text-align: center;
   top: 50%;
-  left: 50%;
   color: white;
 }
 
