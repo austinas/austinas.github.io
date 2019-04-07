@@ -10,6 +10,7 @@ h1 {
 
 p {
 	width: 90%;
+	font-family: "Merriweather", Georgia, "Times New Roman";
 }
 
 hr {
@@ -32,6 +33,32 @@ hr {
   	box-shadow: 1px 4px 8px rgba(0, 0, 0, .75);
   	border: 1px solid #294569;
   	border-style: inset;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .nav {

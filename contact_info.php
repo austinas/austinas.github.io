@@ -1,4 +1,20 @@
-<!DOCTYPE html>
+<?php
+
+if($_POST["submit"]) {
+    $recipient="austinscampini@gmail.com";
+    $subject="Github site form";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?><!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -49,21 +65,28 @@
   			<ul class="nav">
   				<hr>
   				<li><a href="index.html">Home</a></li>
+  				<li><a href="about_me.html">About Me</a></li>
+  				<li><a class="active" href="contact_info.html">Contact Me</a></li>
   				<li><a href="projects.html">Projects</a></li>
-  				<li><a class="active" href="about_me.html">About Me</a></li>
   				<li><a href="resume.html">Resume</a></li>
-  				<li><a href="contact_info.html">Contact Me</a></li>
   				<hr>
 			</ul>
 			<br>
  
-  			<div>
-  				<p style="font-size: 60px; color: red;">
-  				 	This portion of the site is under maintenance until further notice and until my lazy self feels like doing it. ~Austin 
-  				 </p>
+  			<?=$thankYou ?>
 
+    			<form method="post" action="contact.php">
+        			<label>Name:</label>
+        			<input name="sender">
 
-			</div>
+        			<label>Email address:</label>
+        			<input name="senderEmail">
+
+        			<label>Message:</label>
+        			<textarea rows="5" cols="20" name="message"></textarea>
+
+        			<input type="submit" name="submit">
+    		</form>
 			<br><br>
 
 			<div class="row" style="background-color: #325156; color: #5a9099;">
