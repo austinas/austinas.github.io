@@ -1,7 +1,6 @@
 body {
-	background-color: #00dbeb;
+	background-color: #AED6F1;
 	background-image: url("https://user-images.githubusercontent.com/31483647/55678086-f68ed900-58c1-11e9-81d8-2ae7d3eb07a7.png");
-	margin-bottom: 
 }
 
 h1 {
@@ -77,19 +76,19 @@ hr {
     display:inline-block;
     padding: 10px;
     font-size: 20px;
-  	color: #33cccc;
+  	color: #7FB3D5;
   	text-decoration: none;
 
 }
 
 .nav a:hover {
-  	background-color: #d2dce9;
+  	background-color: #BFC9CA;
   	color: black;
 }
 
 .active {
-  background-color: gray;
-  color: red;
+  background-color: #D0D3D4;
+  text-decoration-color: #7FB3D5;
 }
 
 .hero-image {
